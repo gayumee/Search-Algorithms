@@ -19,32 +19,88 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
-
-
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  
+    return -1  
+arr = eval(input())
+target = int(input())
+arr.sort()
+print(arr)
+result = linear_search(arr, target)
+if result != -1:
+    print("Element found at index: ", result)
+else:
+    print("Element not found")
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
 
+    while left <= right:
+        mid = (left + right) 
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
 
+arr = eval(input())
+target = int(input())
+arr.sort()
+print(arr)
+result = binary_search(sorted(arr), target)
 
-
-
+if result != -1:
+    print("Element found at index: ", result)
+else:
+    print("Element not found")
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
+def binary_search_recursive(arr, target, left, right):
+    if left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            return binary_search_recursive(arr, target, mid + 1, right)
+        else:
+            return binary_search_recursive(arr, target, left, mid - 1)
+    return -1
 
-
-
-
-
+arr = eval(input())
+target = int(input())
+arr.sort()
+print(arr)
+result = binary_search_recursive(arr, target, 0, len(arr) - 1)
+if result != -1:
+    print("Element found at index: ", result)
+else:
+    print("Element not found")
 ```
 ## Sample Input and Output
+```
+i)	#Use a linear search method to match the item in a list.
+[1, 8, 7, 9, 10]
+7
+[1, 7, 8, 9, 10]
+Element found at index:  1
 
-
-
-
-
-
+ii)	# Find the element in a list using Binary Search(Iterative Method).
+[10, 78, 68, 67, 56]
+68
+[10, 56, 67, 68, 78]
+Element found at index:  3
+iii)	# Find the element in a list using Binary Search (recursive Method).
+[78, 56, 77, 98, 95]
+77
+[56, 77, 78, 95, 98]
+Element found at index:  1
+```
 ## Result
 Thus the linear search and binary search algorithm is implemented using python programming.
