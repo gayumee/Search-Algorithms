@@ -83,6 +83,7 @@ if result != -1:
 else:
     print("Element not found")
 ```
+
 ## Sample Input and Output
 ![image](https://github.com/gayumee/Search-Algorithms/assets/149037327/e018c72e-ad03-4b2b-b4ed-b3005279f9a8)
 ![image](https://github.com/gayumee/Search-Algorithms/assets/149037327/3230afc5-b861-4012-a258-2e848e6afb9a)
