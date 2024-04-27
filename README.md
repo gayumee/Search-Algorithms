@@ -84,23 +84,10 @@ else:
     print("Element not found")
 ```
 ## Sample Input and Output
-```
-i)	#Use a linear search method to match the item in a list.
-[1, 8, 7, 9, 10]
-7
-[1, 7, 8, 9, 10]
-Element found at index:  1
+![image](https://github.com/gayumee/Search-Algorithms/assets/149037327/e018c72e-ad03-4b2b-b4ed-b3005279f9a8)
+![image](https://github.com/gayumee/Search-Algorithms/assets/149037327/3230afc5-b861-4012-a258-2e848e6afb9a)
+![image](https://github.com/gayumee/Search-Algorithms/assets/149037327/514e2bc6-55de-4f23-bf48-83fb23cf879d)
 
-ii)	# Find the element in a list using Binary Search(Iterative Method).
-[10, 78, 68, 67, 56]
-68
-[10, 56, 67, 68, 78]
-Element found at index:  3
-iii)	# Find the element in a list using Binary Search (recursive Method).
-[78, 56, 77, 98, 95]
-77
-[56, 77, 78, 95, 98]
-Element found at index:  1
-```
+
 ## Result
 Thus the linear search and binary search algorithm is implemented using python programming.
